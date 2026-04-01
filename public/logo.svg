@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#0a0508"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="40%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="ringGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="ringGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2"/>
+    </linearGradient>
+    <linearGradient id="orbGrad" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="5" y="5" width="190" height="190" rx="42" ry="42" fill="url(#bgGrad)"/>
+  <rect x="5" y="5" width="190" height="190" rx="42" ry="42" fill="none" stroke="url(#boltGrad)" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Outer glow behind orb -->
+  <circle cx="100" cy="95" r="55" fill="url(#centerGlow)"/>
+
+  <!-- Orb / crystal ball -->
+  <circle cx="100" cy="95" r="38" fill="url(#orbGrad)" stroke="url(#ringGrad1)" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="100" cy="95" r="32" fill="none" stroke="url(#ringGrad2)" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Orbital ring 1 (tilted ellipse) -->
+  <ellipse cx="100" cy="95" rx="52" ry="18" fill="none" stroke="url(#ringGrad1)" stroke-width="1.8" stroke-opacity="0.7" transform="rotate(-25, 100, 95)" filter="url(#glow)"/>
+  <circle cx="48" cy="80" r="2.5" fill="#f97316" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="152" cy="110" r="2" fill="#dc2626" opacity="0.7" filter="url(#glow)"/>
+
+  <!-- Orbital ring 2 -->
+  <ellipse cx="100" cy="95" rx="56" ry="14" fill="none" stroke="url(#ringGrad2)" stroke-width="1.2" stroke-opacity="0.5" transform="rotate(35, 100, 95)" filter="url(#glow)"/>
+  <circle cx="155" cy="85" r="2" fill="#f59e0b" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="45" cy="105" r="1.8" fill="#ef4444" opacity="0.6" filter="url(#glow)"/>
+
+  <!-- Lightning bolt (the ZAP) -->
+  <polygon points="108,40 82,98 98,98 92,150 120,88 104,88" fill="url(#boltGrad)" filter="url(#outerGlow)"/>
+
+  <!-- Small sparkle dots -->
+  <circle cx="62" cy="52" r="1.5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="140" cy="58" r="1" fill="#ef4444" opacity="0.7"/>
+  <circle cx="55" cy="130" r="1.2" fill="#f97316" opacity="0.6"/>
+  <circle cx="145" cy="140" r="1" fill="#f59e0b" opacity="0.5"/>
+</svg>
