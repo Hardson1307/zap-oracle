@@ -48,28 +48,7 @@ export function LandingHero() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        {/* Logo Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, type: "spring", stiffness: 180 }}
-          className="mb-6"
-        >
-          <div className="relative inline-block">
-            {/* Logo glow behind */}
-            <div className="absolute inset-0 scale-150 bg-red-500/20 blur-[60px] rounded-full" />
-            <Image
-              src="/zap-oracle-logo.png"
-              alt="Zap-Oracle Logo"
-              width={320}
-              height={320}
-              priority
-              className="relative z-10 w-48 sm:w-56 md:w-64 h-auto drop-shadow-2xl"
-            />
-          </div>
-        </motion.div>
-
-        {/* Brand text underneath logo */}
+        {/* Brand text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
