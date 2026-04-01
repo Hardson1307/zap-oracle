@@ -226,7 +226,7 @@ export function LandingHero() {
 
       {/* Footer */}
       <div className="relative z-10 pb-8 text-center text-gray-600 text-sm">
-        Built with Starkzap SDK · Deployed on Starknet Sepolia
+        Built on Starknet
       </div>
     </div>
   );
