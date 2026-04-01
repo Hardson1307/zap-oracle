@@ -190,7 +190,10 @@ export function ConnectWalletDialog() {
 
   const handleConnect = async (connectorId: string) => {
     try {
-      await connect({ connector: connectorId });
+      const connector = connectors.find((c) => c.id === connectorId);
+      if (connector) {
+        await connect({ connector });
+      }
     } catch {
       // Connection failed — user may have rejected or no wallet installed
     }
