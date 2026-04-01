@@ -122,14 +122,6 @@ export function LandingHero() {
             Start Trading
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => setCurrentView("markets")}
-            className="border-gray-600 text-gray-200 hover:bg-gray-800/80 font-semibold text-lg px-8 py-6 rounded-xl"
-          >
-            View Markets
-          </Button>
         </motion.div>
 
         {/* Stats */}
