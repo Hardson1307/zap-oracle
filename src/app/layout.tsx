@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   description:
-    "The first Polymarket-style prediction market on Starknet. Trade on real-world events with gasless transactions, instant settlements, and social login via Starkzap SDK.",
+    "The first Polymarket-style prediction market on Starknet. Trade on real-world events with gasless transactions and instant settlements.",
   keywords: [
     "Zap-Oracle",
     "prediction market",

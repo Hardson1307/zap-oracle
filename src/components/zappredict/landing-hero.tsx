@@ -158,15 +158,15 @@ export function LandingHero() {
             {
               icon: Lock,
               title: "Gasless Trading",
-              desc: "Every trade is sponsored via Starkzap's AVNU paymaster integration. Zero gas fees, ever.",
+              desc: "Every trade is gasless with zero fees. Powered by Starknet's low-cost infrastructure.",
               bgClass: "bg-red-500/10",
               hoverBgClass: "group-hover:bg-red-500/20",
               iconClass: "text-red-400",
             },
             {
               icon: Shield,
-              title: "Social Login Wallets",
-              desc: "Connect with Google, Apple, or email via Privy. No seed phrases, no extensions needed.",
+              title: "Secure Wallets",
+              desc: "Connect your Starknet wallet securely. MetaMask, ArgentX, Braavos, and more supported.",
               bgClass: "bg-orange-500/10",
               hoverBgClass: "group-hover:bg-orange-500/20",
               iconClass: "text-orange-400",
