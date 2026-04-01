@@ -95,8 +95,8 @@ export function LandingHero() {
             variant="outline"
             className="mb-6 px-4 py-1.5 border-red-500/30 bg-red-500/10 text-red-400 text-sm font-medium"
           >
-            <Trophy className="w-3.5 h-3.5 mr-1.5" />
-            Powered by Starkzap SDK on Starknet
+            <Zap className="w-3.5 h-3.5 mr-1.5" />
+            Built on Starknet
           </Badge>
         </motion.div>
 
